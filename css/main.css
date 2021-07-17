@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --textcolor: rgb(118, 118, 118);
+  --backgroundcolor: #f8f8f8;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 16px;
+  color: var(--textcolor);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.main {
+  display: flex;
+  /* height: 100vh; */
+}
+
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.page_content {
+  margin-left: 30%;
+  background-color: var(--backgroundcolor);
+  padding: 0 50px;
+}
+
+.home_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.home_content .profile_pix {
+  border: none;
+  width: 35%;
+}
+
+.home_content .profile_pix img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.home_content .profile_content {
+  width: 65%;
+}
+
+.home_content .profile_content h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.home_content .profile_content p {
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+
+.home_content .social_icons ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* About us page */
+
+.about_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about_content p {
+  width: 95%;
+}
+
+/* Portfolio page */
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.portfolio .box {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.portfolio .box .description {
+  height: 170px;
+}
+
+.portfolio .box .tags {
+  margin-bottom: 20px;
+}
+
+.portfolio .box .tags ul li {
+  display: inline-block;
+  font-size: 10px;
+  margin-right: 5px;
+  border: 1px solid rgb(118, 118, 118);
+  padding: 5px;
+  border-radius: 5px 7px;
+}
+
+/* Contact page */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
