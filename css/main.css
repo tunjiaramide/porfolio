@@ -137,6 +137,12 @@ a {
   margin-bottom: 30px;
 }
 
+.portfolio .box .img_cover {
+  width: 350px;
+  border: 2px solid #000;
+  height: 200px;
+}
+
 .portfolio .box .description {
   height: 170px;
 }
@@ -154,6 +160,10 @@ a {
   border-radius: 5px 7px;
 }
 
+.portfolio .box .btn {
+  padding: 5px 10px;
+}
+
 /* Contact page */
 .contact {
   display: flex;
@@ -161,5 +171,4 @@ a {
   justify-content: flex-start;
   min-height: 100vh;
   flex-wrap: wrap;
-  padding-top: 50px;
 }
