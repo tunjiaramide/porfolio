@@ -152,6 +152,10 @@ a {
   height: 200px;
 }
 
+.portfolio .box .img_cover img {
+  width: 100%;
+}
+
 .portfolio .box .description {
   height: 170px;
 }
