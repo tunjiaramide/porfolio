@@ -15,20 +15,11 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#technical_projects">Technical Projects</a></li>
+                    <li><a href="#certification">Training and Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <section class="skills"> 
-                <h3>Skills</h3>
-                <ul>
-                    <li>ReactJs</li>
-                    <li>NextJs</li>
-                    <li>NodeJs</li>
-                    <li>MongoDB</li>
-                    <li>AWS</li>
-                </ul>
-            </section>
         </sidebar>
         <section class="page_content">
             <content class="home_content"> 
@@ -37,8 +28,14 @@
                 </div>
                 <div class="profile_content">
                     <h1>Aramide Adetunji</h1>
-                    <p>An AWS Serverless Developer based in Nigeria, using the serverless architecture (API Gateway, Lambda, Dynamodb) to build and 
-                        deploy web applications.</p>
+                    <p>A Web Developer located in Nigeria, with a strong interest in building and deploying serverless applications.</p>
+                        <p>I have over 5 years of experience in 
+                            developing and deploying web applications. Strong background in 
+                            using HTML, CSS, ReactJS, MongoDB, Node.js, Express.js and
+                            AWS Serverless (API gateway, Lambda, Dynamodb). 
+                        </p>
+
+
                     <div class="social_icons">
                         <ul>
                             <li><a href="https://github.com/tunjiaramide" target="_blank"><img src="https://adetunjiaramide.s3.amazonaws.com/images/github.png" alt="Gitbub_profile"></a></li>
@@ -51,115 +48,73 @@
                 </div>
             </content>
 
-            <content id="about" class="about_content"> 
+            <content id="about" class="professional_content"> 
                 <div class="about_img">
-                    <img src="https://adetunjiaramide.s3.amazonaws.com/images/tunji_pix.png" alt="Tunji Aramide AMP Picture">
-                    <p>My name is Aramide Adetunji, a Web Developer with over 7 years experience.
-                        I have worked in over 4 different companies as a Web Developer building and maintaining
-                        the companies Web applications. I started out with building Web applications using HTML, CSS, PHP, Javascript, and Wordpress
-                        in my roles as a Web Developer in those companies, and also did some remote work on Upwork
-                        as a Wordpress Developer.
-                    </p>   
+                    <h2>Professional Experience</h2>
 
-                    <p>I am currently working in Lagos, Nigeria, and am available for a full time remote role, with emphasis
-                        on the MERN stack ecosystem. You can find my <a class="cv" href="https://docs.google.com/document/d/1DS_b4AErnojJrt3ehWeUOr3akO00A0wSVXniE4NBR3U/edit?usp=sharing">CV here</a>
-                    </p>
+                    <h3>Web Developer</h3>
+                    <h4>Boundless Dynamics</h4>
+                    <h5>2021 - Present</h5>
+                    <ul>
+                        <li>Built a secured Web application using AWS Cognito, Elasticsearch, OpenAI, 
+                            AWS ECS, and set up CI/CD pipeline using Github actions.</li>
+                        <li>Built cron Jobs using CloudWatch events to automate Lambda functions</li>
+                        <li>Set up static hosting for the company, using AWS S3, ACM, Cloudfront and Route53</li>
+                    </ul>
+
+                    <h3>Web Developer</h3>
+                    <h4>African Foundry</h4>
+                    <h5>2020 - 2021</h5>
+                    <ul>
+                        <li>Converted PSD designs to fully functional web applications.</li>
+                        <li>Deploy multiple static websites to AWS S3</li>
+                    </ul>
+
+
+                    <h3>Web Developer (Tech Lead)</h3>
+                    <h4>Punch Newspapers Nigeria Ltd (News Media)</h4>
+                    <h5>2016 - 2020</h5>
+                    <ul>
+                        <li>Moved the Punch Wordpress site from a monolithic application on EC2 to a three tier application, using EC2 to run the application, EFS to store the wordpress files, 
+                            offloaded the images to AWS S3, moved the database to RDS and used ElasticCache in front of the RDS.</li>
+                        <li>Leveraged AWS CloudFront and Load balancer to improve the reliability of our web application</li>
+                    </ul>
+
                 </div>
             </content>
-            <content id="portfolio" class="portfolio"> 
-               <div class="box">
-                   <div class="img_cover">
-                       <img src="https://adetunjiaramide.s3.amazonaws.com/images/project_1.png" />
-                   </div>
-                   <div class="description">
-                       <p>I built a working Single Page shopping app from a PSD file provided to me in Figma.
-                           The Shopping app was buit using ReactJs, and the backend data was created with hasura
-                           and consumed using REST API.
-                       </p>
-                   </div>
-                   <div class="tags">
-                       <ul>
-                           <li>ReactJs</li>
-                           <li>Rest API</li>
-                           <li>Hasura.io</li>
-                       </ul>
-                   </div>
-                   <div class="project_url">
-                       <button class="btn btn-default"><a href="https://github.com/tunjiaramide/art-shop/tree/master" target="_blank">Git Source</a></button>
-                       <button class="btn btn-default"><a href="https://arts-shop.herokuapp.com/" target="_blank">Web Link</a></button>
-                   </div>
-               </div>
-               <div class="box">
-                    <div class="img_cover">
-                        <img src="https://adetunjiaramide.s3.amazonaws.com/images/project_2.png" />
-                    </div>
-                    <div class="description">
-                        <p>My company website desiged in AdobeXD and built from scratch using 
-                            Bootstrap, Javascript, PHP and Mysql. The website introduces, the company brand, 
-                            and stores users queries as potential leads
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <ul>
-                            <li>AdobeXD</li>
-                            <li>Bootstrap</li>
-                            <li>PHP</li>
-                            <li>MYSQL</li>
-                        </ul>
-                    </div>
-                    <div class="project_url">
-                        <button class="btn btn-default"><a href="https://tigertmt.com/" target="_blank">Web Link</a></button>
-                    </div>
-               </div>
 
-               <div class="box">
-                <div class="img_cover">
-                    <img src="https://adetunjiaramide.s3.amazonaws.com/images/afl.png" />
-                </div>
-                <div class="description">
-                    <p>Built another of my company website desiged in AdobeXD and 
-                        built from scratch using HTML5, CSS
-                        Bootstrap, Javascript. The website focuses more on the company
-                    factory products</p>
-                </div>
-                <div class="tags">
+
+            <content id="technical_projects" class="professional_content"> 
+                <div class="about_img">
+                    <h2>Technical Projects</h2>
+                    <h3>AWS Serverless Chat Application</h3>
                     <ul>
-                        <li>AdobeXD</li>
-                        <li>Bootstrap</li>
-                        <li>HTML 5</li>
-                        <li>Javascript</li>
-                        
+                        <li>Built a serverless chat application using AWS Lambda, DynamoDB, API Gateway, S3, Cognito, CloudFront.</li>
+                        <strong><a href="#">Github</a></strong> | <strong><a href="#">project</a></strong>
+                    </ul>
+                    <h3>AWS Three-tier Web Application</h3>
+                    <ul>
+                        <li>Deployed and hosted a highly available WordPress application using Amazon EC2, RDS, Route 53, and VPC.</li>
+                        <strong><a href="#">Github</a></strong> | <strong><a href="#">project</a></strong>
                     </ul>
                 </div>
-                <div class="project_url">
-                    <button class="btn btn-default"><a href="https://afl.marineandeconomy.com/">Web url</a></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="img_cover">
-                    <img src="https://via.placeholder.com/350-x200" />
-                </div>
-                <div class="description">
-                    <p>Praesent elementum facilisis leo vel fringilla est. Sapien et ligula 
-                     ullamcorper malesuada proin. Sed risus ultricies tristique nulla aliquet 
-                     enim. Vitae aliquet nec ullamcorper sit amet risus nullam.</p>
-                </div>
-                <div class="tags">
-                    <ul>
-                        <li>NextJs</li>
-                        <li>Styled Component</li>
-                        <li>Redux</li>
-                    </ul>
-                </div>
-                <div class="project_url">
-                    <button class="btn btn-default"><a href="#">Git Source</a></button>
-                    <button class="btn btn-default"><a href="#">Web url</a></button>
-                </div>
-            </div>
-
-
             </content>
+
+            <content id="certification" class="professional_content"> 
+                <div class="about_img">
+                    <h2>Certification and Trainings</h2>
+                    <h3>Trainings</h3>
+                    <ul>
+                        <li>AWS Developer Associate Course by Adrian Cantrill</li>
+                        <li>Serverless: zero to paid professional by ServerlessGuru</li>
+                    </ul>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Higher National Diploma in Accountancy & Finance; Yaba College of Technology, Yaba, Lagos - 2007</li>
+                    </ul>
+                </div>
+            </content>          
+
             <content id="contact" class="contact"> 
                 <div class="content_contact">
                     <h2>Contact</h2>
@@ -171,6 +126,8 @@
                             https://www.linkedin.com/in/tunji-aramide/
                         </a>
                     </p>
+
+                    <h6>Total number of visits to the website </h6>
                 </div>
             </content>
         </section>
