@@ -138,5 +138,21 @@
             </content>
         </section>
     </main>
+
+    <script>
+        const getCount = async() => {
+            const url = 'https://q586fxiopi.execute-api.us-east-1.amazonaws.com/prod';
+            const result = await fetch(url);
+
+            if (result.$metadata.httpStatusCode === 200) {
+                let data = await result.json();
+                console.log(data)
+            } else {
+                console.log('Error has been returned')
+            }
+        }
+
+        getCount();
+    </script>
 </body>
 </html>
