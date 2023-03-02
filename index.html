@@ -132,8 +132,7 @@
                             https://www.linkedin.com/in/tunji-aramide/
                         </a>
                     </p>
-
-                    <h6>Total number of visits to the website </h6>
+                    <h6 id="visits"></h6>
                 </div>
             </content>
         </section>
@@ -143,15 +142,14 @@
         const getCount = async() => {
             const url = 'https://q586fxiopi.execute-api.us-east-1.amazonaws.com/prod';
             const result = await fetch(url);
-
-            if (result.$metadata.httpStatusCode === 200) {
+            if (result.status === 200) {
                 let data = await result.json();
-                console.log(data)
+                document.getElementById("visits").textContent = "Total visits: " + data.Attributes.counterValue.N;
+                console.log(data.Attributes.counterValue.N)
             } else {
                 console.log('Error has been returned')
             }
         }
-
         getCount();
     </script>
 </body>
