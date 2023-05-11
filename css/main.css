@@ -235,13 +235,17 @@ a {
     height: unset;
     align-items: center;
     padding-top: 10px;
-    padding-left: 10px;
     position: unset;
   }
 
   .sidebar nav ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 10px;
+    font-weight: bold;
   }
 
   .sidebar .skills {
@@ -268,6 +272,7 @@ a {
   .home_content .profile_content {
     width: 100%;
     text-align: center;
+    /* height: 100vh; */
   }
 
   .home_content .profile_content h1 {
@@ -282,11 +287,16 @@ a {
     width: 100%;
   }
 
+  .professional_content {
+    margin-top: 20px;
+    height: unset;
+  }
+
   .portfolio {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   .portfolio .box {
@@ -303,7 +313,5 @@ a {
     width: 100%;
   }
 
-  .contact {
-    min-height: unset;
-  }
+
 }
